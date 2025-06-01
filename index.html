@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <!-- Basic Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FeroxDev | Web Design & Development in Kozhikode</title>
+  <meta name="description" content="FeroxDev offers professional web design and development services in Kozhikode. We create responsive, SEO-friendly websites tailored to your business needs." />
+  <meta name="keywords" content="FeroxDev, Web Design, Web Development, Kozhikode, SEO, Responsive Websites" />
+  <meta name="author" content="FeroxDev" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://feroxdev.co/" />
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="FeroxDev | Web Design & Development in Kozhikode" />
+  <meta property="og:description" content="Professional web design and development services in Kozhikode by FeroxDev." />
+  <meta property="og:image" content="https://arjuxlal.github.io/FeroxDev/preview.jpg" />
+  <meta property="og:url" content="https://feroxdev.co/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FeroxDev | Web Design & Development in Kozhikode" />
+  <meta name="twitter:description" content="Professional web design and development services in Kozhikode by FeroxDev." />
+  <meta name="twitter:image" content="https://arjuxlal.github.io/FeroxDev/preview.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    };
+  </script>
+
+  <!-- Custom Animation -->
+  <style>
+    @keyframes borderGlow {
+      0% { border-color: rgb(255, 0, 0); }
+      25% { border-color: rgb(0, 255, 0); }
+      50% { border-color: rgb(0, 0, 255); }
+      75% { border-color: rgb(255, 255, 0); }
+      100% { border-color: rgb(255, 0, 0); }
+    }
+    .animate-borderGlow {
+      animation: borderGlow 4s linear infinite;
+    }
+  </style>
+</head>
+
+
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300 pt-24">
+
+    <!-- Navbar -->
+    <header
+        class="fixed top-0 left-0 w-full z-50 flex justify-between items-center p-6 bg-gray-100 dark:bg-gray-800 shadow-md">
+        <div class="text-2xl font-bold">FeroxDev</div>
+        <nav class="hidden md:flex space-x-8">
+            <a href="#home" class="hover:text-blue-500">Home</a>
+            <a href="#about" class="hover:text-blue-500">About</a>
+            <a href="#services" class="hover:text-blue-500">Services</a>
+            <a href="#projects" class="hover:text-blue-500">Projects</a>
+            <a href="#faq" class="hover:text-blue-500">FAQ</a>
+        </nav>
+
+        <!-- Desktop Buttons -->
+        <div class="hidden md:flex items-center space-x-4">
+            <!-- Theme Toggle Switch -->
+            <button id="theme-toggle"
+                class="w-12 h-6 bg-gray-300 dark:bg-gray-700 rounded-full p-1 flex items-center transition-all duration-300">
+                <div
+                    class="w-4 h-4 bg-white rounded-full transform transition-transform duration-300 dark:translate-x-6">
+                </div>
+            </button>
+
+            <!-- Contact Us -->
+            <button id="contact-btn-desktop"
+                class="relative overflow-hidden border-2 border-transparent text-black dark:text-white py-2 px-6 rounded-lg z-10 transition-colors">
+                Contact Us
+                <span
+                    class="absolute inset-0 border-2 border-transparent animate-borderGlow rounded-lg pointer-events-none"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Navbar Toggle Button -->
+        <div class="md:hidden">
+            <button id="toggle-btn" class="text-black dark:text-white text-3xl">&#9776;</button>
+        </div>
+    </header>
+
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+        class="hidden fixed inset-0 bg-gray-100 dark:bg-gray-800 bg-opacity-90 flex flex-col items-center justify-center space-y-6 z-50 relative">
+        <!-- Close Button -->
+        <button id="mobile-menu-close" class="absolute top-4 right-4 text-4xl text-black dark:text-white">
+            &times;
+        </button>
+
+        <a href="#home" class="text-xl">Home</a>
+        <a href="#about" class="text-xl">About</a>
+        <a href="#services" class="text-xl">Services</a>
+        <a href="#projects" class="text-xl">Projects</a>
+        <a href="#faq" class="text-xl">FAQ</a>
+
+        <button id="contact-btn-mobile" class="bg-blue-500 text-white py-2 px-6 rounded-lg">Contact Us</button>
+
+        <button id="theme-toggle-mobile"
+            class="w-12 h-6 bg-gray-300 dark:bg-gray-700 rounded-full p-1 flex items-center transition-all duration-300">
+            <div class="w-4 h-4 bg-white rounded-full transform transition-transform duration-300 dark:translate-x-6">
+            </div>
+        </button>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home"
+        class="flex flex-col md:flex-row items-center justify-between p-8 md:p-16 space-y-8 md:space-y-0 md:space-x-8">
+        <div class="w-full md:w-1/2 text-center">
+            <h2 class="text-4xl font-semibold">Your Online Success Starts with Great Design</h2>
+            <p class="mt-4 text-lg">Let me build the perfect website for your business</p>
+        </div>
+        <div class="w-full md:w-1/2 bg-transparent h-96 flex justify-center items-center rounded-lg">
+            <iframe src="https://my.spline.design/untitled-jWrjsf6sEeUbvkaaQLXGbbAl/" frameborder="0" width="100%"
+                height="100%">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="text-center py-16">
+        <h2 class="text-3xl font-semibold mb-6">About Us</h2>
+        <p class="max-w-3xl mx-auto text-lg">Welcome to FeroxDev — where creativity meets functionality!
+
+            We’re a passionate team (or "I’m a passionate freelancer," if it’s just you) dedicated to crafting
+            beautiful, user-friendly websites that help businesses stand out online. Whether you're a startup, small
+            business, or personal brand, we believe your website should tell your story, reflect your values, and
+            turn
+            visitors into customers.
+
+            At FeroxDev, we don’t just design websites — we build online experiences. We focus on clean
+            design, fast performance, and mobile responsiveness so your visitors get the best every time they click.
+
+            We value honesty, creativity, and long-term relationships. That’s why we treat every project like it’s
+            our
+            own and every client like a partner. Your success is our success.
+
+            Let’s build something amazing together!</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="text-center py-16">
+        <h2 class="text-3xl font-semibold mb-6">Our Services</h2>
+        <div class="grid gap-8 grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto">
+            <a href="https://drive.google.com/file/d/1U09bDADKOKULwzI6cahbpIvm-VslnLtf/view?usp=drive_link"
+                target="_blank"
+                class="block w-full bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow transition hover:shadow-lg">
+                <h3 class="text-xl font-semibold mb-4">Offer</h3>
+                <p class="text-lg">Price: $X,XXX</p>
+                <p class="mt-2">Click for more details</p>
+            </a>
+
+            <a href="https://drive.google.com/file/d/1-DQFcC47k7ga6oobftahFpPYWkGBvTc9/view?usp=drive_link"
+                target="_blank"
+                class="block w-full bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow transition hover:shadow-lg">
+                <h3 class="text-xl font-semibold mb-4">WebDesign</h3>
+                <p class="text-lg">1 WeekPrice: $1,000</p>
+                <p class="text-lg">2 WeekPrice: $3,000</p>
+                <p class="mt-2">Check package details</p>
+            </a>
+
+            <a href="https://drive.google.com/file/d/1OrR8ocKEdq8VW3eeZHMmdnh9GpPXKSXI/view?usp=drive_link"
+                target="_blank"
+                class="block w-full bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow transition hover:shadow-lg">
+                <h3 class="text-xl font-semibold mb-4">Maintenance</h3>
+                <p class="text-lg">6 MonthPrice: $2.5 Lakhs</p>
+                <p class="text-lg">1 YearPrice: $4 Lakhs</p>
+                <p class="mt-2">Check package details</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 text-center">
+        <h2 class="text-3xl font-semibold mb-6">Our Projects</h2>
+        <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+            <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow transition">
+                <img src="project1.jpg" alt="Project 1" class="w-full h-48 object-cover rounded-t-lg" />
+                <h3 class="text-xl font-semibold mt-4">Project 1</h3>
+                <p class="text-lg">Web design using HTML, CSS, and JavaScript</p>
+            </div>
+            <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow transition">
+                <img src="project2.jpg" alt="Project 2" class="w-full h-48 object-cover rounded-t-lg" />
+                <h3 class="text-xl font-semibold mt-4">Project 2</h3>
+                <p class="text-lg">Custom E-commerce site</p>
+            </div>
+            <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow transition">
+                <img src="project3.jpg" alt="Project 3" class="w-full h-48 object-cover rounded-t-lg" />
+                <h3 class="text-xl font-semibold mt-4">Project 3</h3>
+                <p class="text-lg">Portfolio website for creative professionals</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 text-center">
+        <h2 class="text-3xl font-semibold mb-6">Frequently Asked Questions</h2>
+        <div class="max-w-3xl mx-auto">
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold">How long does it take to complete a website?</h3>
+                <p class="text-lg">Typically, our projects take 1 to 2 weeks depending on complexity.</p>
+            </div>
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold">Can I update my website after it's finished?</h3>
+                <p class="text-lg">Yes, we offer tutorials and ongoing support for updates.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <div id="contact-form" class="hidden fixed inset-0 bg-gray-800 bg-opacity-90 flex items-center justify-center z-50">
+        <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg max-w-md w-full">
+            <h2 class="text-3xl font-semibold mb-6 text-center">Contact Us</h2>
+            <form class="space-y-4" action="https://formsubmit.co/feroxfreelancer@gmail.com" method="POST">
+                <label for="name" class="block text-lg">Name</label>
+                <input type="text" id="name" name="name"
+                    class="w-full p-3 rounded bg-white dark:bg-gray-800 dark:text-white" required />
+
+                <label for="email" class="block text-lg">Email</label>
+                <input type="email" id="email" name="email"
+                    class="w-full p-3 rounded bg-white dark:bg-gray-800 dark:text-white" required />
+
+                <label for="message" class="block text-lg">Message</label>
+                <textarea id="message" name="message"
+                    class="w-full p-3 rounded bg-white dark:bg-gray-800 dark:text-white" required></textarea>
+
+                <button type="submit" class="w-full py-3 bg-blue-500 text-white rounded-lg">Send</button>
+            </form>
+            <button id="close-contact-form" class="mt-4 w-full bg-red-500 text-white py-2 rounded-lg">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 dark:bg-gray-800 text-center py-6">
+        <p>&copy; 2025 FeroxDev. All rights reserved.</p>
+        <p>Follow us:
+            <a href="https://www.instagram.com/ferox.dev?igsh=MWlkdGJpaXFscDAxMw==" target="_blank"
+                class="text-blue-500 hover:underline">Instagram</a>
+        </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        const toggleBtn = document.getElementById('toggle-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuCloseBtn = document.getElementById('mobile-menu-close');
+
+        toggleBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileMenuCloseBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+
+        const contactBtnMobile = document.getElementById('contact-btn-mobile');
+        const contactForm = document.getElementById('contact-form');
+        const closeContactForm = document.getElementById('close-contact-form');
+        const contactBtnDesktop = document.getElementById('contact-btn-desktop');
+
+        contactBtnMobile.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            contactForm.classList.remove('hidden');
+        });
+
+        contactBtnDesktop.addEventListener('click', () => {
+            contactForm.classList.remove('hidden');
+        });
+
+        closeContactForm.addEventListener('click', () => {
+            contactForm.classList.add('hidden');
+        });
+
+        // Theme toggle logic
+        const themeToggleButton = document.getElementById('theme-toggle');
+        const themeToggleMobileButton = document.getElementById('theme-toggle-mobile');
+
+        function setTheme(theme) {
+            if (theme === 'dark') {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        function toggleTheme() {
+            const isDark = document.documentElement.classList.contains('dark');
+            setTheme(isDark ? 'light' : 'dark');
+        }
+
+        // Load theme from localStorage
+        if (localStorage.getItem('theme') === 'light') {
+            setTheme('light');
+        }
+
+        themeToggleButton.addEventListener('click', toggleTheme);
+        themeToggleMobileButton.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            toggleTheme();
+        });
+    </script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.98/build/spline-viewer.js"></script>
+</body>
+
+</html>
